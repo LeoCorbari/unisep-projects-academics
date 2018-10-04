@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<head>
+<meta charset="ISO-8859-1" />
+<title>Login</title>
+</head>
+<body>
+
+	<h:form style="width: 15%; padding: 2%; border: 1px solid lightslategray; margin-left: 40%; margin-top: 10%;">
+	
+	Login: <br />
+		<h:inputText style="width: 97%;"
+		value="#{loginBean.login}" required="true" requiredMessage="O campo Login deve ser Preenchido"/>
+		<br />
+		<br />
+	Senha: <br />
+		<h:inputSecret style="width: 97%;"
+		value="#{loginBean.senha}" required="true" requiredMessage="O campo Senha deve ser Preenchido"/>
+ 		<br />
+ 		<br />
+ 		<br />
+		<h:commandButton style="width: 100%;" value="Entrar" action="#{loginBean.entrar}" />
+		<h:messages style="color: #a00;"/>
+	</h:form>
+
+</body>
+</html>

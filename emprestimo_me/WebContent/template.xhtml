@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:h="http://xmlns.jcp.org/jsf/html"
+	  xmlns:f="http://xmlns.jcp.org/jsf/core"
+	  xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<head>
+<meta charset="ISO-8859-1"/>
+<title>Emprestimo_ME</title>
+</head>
+<body>
+ 
+	<div style="border: 1px solid; ">
+		<div style="width: 50%; float: left;"><h3 style="padding-left: 3%;">Emprestimo.ME</h3></div>
+		<div style="width: 30%; padding-left: 70%; text-align: center; padding-top: 1.5%;">
+			<div style="width: 60%; float: left;"> <h:link value="Meus Emprestimos" outcome="listaEmprestimos.xhtml"></h:link> </div>
+			<div style="width: 40%; float: left;"> <h:link value="Objetos" outcome="listaObjetos.xhtml"></h:link> </div>
+			<div style="clear: both;"></div>
+		</div>
+	</div>
+	
+	<div style="margin-top: 3%;">
+		<ui:insert name="conteudo"/>
+	</div>
+	
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Context antiJARLocking="true" path="emprestimo_me">
+	<Realm className="org.apache.catalina.realm.JDBCRealm" 
+            debug="4"
+            driverName="org.postgresql.Driver"
+            connectionURL="jdbc:postgresql://localhost:5432/emprestimo"
+            connectionName="postgres"
+            connectionPassword="postgres"
+            userTable="usuarios" 
+            userNameCol="ds_login"
+            userCredCol="ds_senha"
+            userRoleTable="papeis_usuario" 
+            roleNameCol="ds_papel"
+        />
+</Context>
